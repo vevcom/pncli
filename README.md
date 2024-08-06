@@ -2,6 +2,11 @@
 This is a cli for use with projectnext. 
 
 ## Set up
+0. Install deps:
+```bash
+    npm ci
+```
+
 1. Build the cli tool using tsc:
 ```bash
     npm run buid
