@@ -1,3 +1,9 @@
+dist
+node_modules
+DS_Store
+*.pem
+.env
+
 # Logs
 logs
 *.log

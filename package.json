@@ -1,0 +1,23 @@
+{
+  "name": "pncli",
+  "version": "0.0.1",
+  "description": "cli for project next",
+  "main": "index.js",
+  "bin": {
+    "pn": "./dist/pncli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "init-cli": "npm unlink -g pncli && chmod +x ./dist/pncli.js && echo '#!/usr/bin/env node' | cat - dist/pncli.js > temp && mv temp dist/pncli.js && npm link"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "typescript": "^5.5.4"
+  }
+}
